@@ -1,4 +1,4 @@
-﻿// Licensed to the .NET Foundation under one or more agreements.
+// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 // See the LICENSE file in the project root for more information
 
@@ -215,6 +215,7 @@ namespace DotNetNuke.Entities.Portals
             portalSettings.EnableUrlLanguage = settings.GetValueOrDefault("EnableUrlLanguage", this.hostSettings.EnableUrlLanguage);
             portalSettings.HideFoldersEnabled = settings.GetValueOrDefault("HideFoldersEnabled", true);
             portalSettings.InlineEditorEnabled = settings.GetValueOrDefault("InlineEditorEnabled", true);
+            portalSettings.AllowJsInModuleHeaders = settings.GetValueOrDefault("AllowJsInModuleHeaders", false);
             portalSettings.SearchIncludeCommon = settings.GetValueOrDefault("SearchIncludeCommon", this.hostSettings.SearchIncludeCommon);
             portalSettings.SearchIncludeNumeric = settings.GetValueOrDefault("SearchIncludeNumeric", this.hostSettings.SearchIncludeNumeric);
             portalSettings.SearchIncludedTagInfoFilter = settings.GetValueOrDefault("SearchIncludedTagInfoFilter", this.hostSettings.SearchIncludedTagInfoFilter);

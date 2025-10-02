@@ -1,4 +1,4 @@
-﻿// Licensed to the .NET Foundation under one or more agreements.
+// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 // See the LICENSE file in the project root for more information
 namespace Dnn.PersonaBar.SiteSettings.Services
@@ -3126,6 +3126,7 @@ namespace Dnn.PersonaBar.SiteSettings.Services
                         EnablePopups = portalSettings.EnablePopUps,
                         InjectModuleHyperLink = portalSettings.InjectModuleHyperLink,
                         InlineEditorEnabled = portalSettings.InlineEditorEnabled,
+                        AllowJsInModuleHeaders = portalSettings.AllowJsInModuleHeaders,
                         ShowQuickModuleAddMenu = portalSettings.ShowQuickModuleAddMenu,
                         EnabledVersioning = TabVersionSettings.Instance.IsVersioningEnabled(pid),
                         MaxNumberOfVersions = TabVersionSettings.Instance.GetMaxNumberOfVersions(pid),
@@ -3157,6 +3158,7 @@ namespace Dnn.PersonaBar.SiteSettings.Services
                 PortalController.Instance.UpdatePortalSetting(pid, "EnablePopups", request.EnablePopups.ToString(), false, null, false);
                 PortalController.Instance.UpdatePortalSetting(pid, "InjectModuleHyperLink", request.InjectModuleHyperLink.ToString(), false, null, false);
                 PortalController.Instance.UpdatePortalSetting(pid, "InlineEditorEnabled", request.InlineEditorEnabled.ToString(), false, null, false);
+                PortalController.Instance.UpdatePortalSetting(pid, "AllowJsInModuleHeaders", request.AllowJsInModuleHeaders.ToString(), false, null, false);
                 PortalController.Instance.UpdatePortalSetting(pid, "ShowQuickModuleAddMenu", request.ShowQuickModuleAddMenu.ToString(), false, null, false);
                 if (request.AllowedExtensionsWhitelist == this.hostSettings.DefaultEndUserExtensionAllowList.ToStorageString())
                 {

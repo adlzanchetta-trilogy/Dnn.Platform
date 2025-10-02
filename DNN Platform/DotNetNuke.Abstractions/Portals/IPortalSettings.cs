@@ -1,4 +1,4 @@
-﻿// Licensed to the .NET Foundation under one or more agreements.
+// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 // See the LICENSE file in the project root for more information
 namespace DotNetNuke.Abstractions.Portals
@@ -219,6 +219,10 @@ namespace DotNetNuke.Abstractions.Portals
         /// <summary>Gets a value indicating whether the Inline Editor is enabled.</summary>
         /// <remarks>Defaults to True.</remarks>
         bool InlineEditorEnabled { get; }
+
+        /// <summary>Gets a value indicating whether JavaScript is allowed in module headers.</summary>
+        /// <remarks>Defaults to False.</remarks>
+        bool AllowJsInModuleHeaders { get; }
 
         /// <summary>
         /// Gets a value indicating whether

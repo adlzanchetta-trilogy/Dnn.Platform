@@ -49,6 +49,7 @@ class MoreSettingsPanelBody extends Component {
                 } else if (data.Settings.AllowedExtensionsWhitelist === data.Settings.ImageExtensionsList) {
                     whitelistOption = 2;
                 }
+
                 this.setState({
                     otherSettings: Object.assign({}, data.Settings),
                     whitelistOption: whitelistOption,
@@ -376,6 +377,22 @@ class MoreSettingsPanelBody extends Component {
                                     onChange={this.onSettingChange.bind(
                                         this,
                                         "InlineEditorEnabled"
+                                    )}
+                                />
+                            </InputGroup>
+                            <InputGroup>
+                                <Label
+                                    labelType="inline"
+                                    tooltipMessage={resx.get("plAllowJsInModuleHeaders.Help")}
+                                    label={resx.get("plAllowJsInModuleHeaders")}
+                                />
+                                <Switch
+                                    onText={resx.get("SwitchOn")}
+                                    offText={resx.get("SwitchOff")}
+                                    value={state.otherSettings.AllowJsInModuleHeaders}
+                                    onChange={this.onSettingChange.bind(
+                                        this,
+                                        "AllowJsInModuleHeaders"
                                     )}
                                 />
                             </InputGroup>

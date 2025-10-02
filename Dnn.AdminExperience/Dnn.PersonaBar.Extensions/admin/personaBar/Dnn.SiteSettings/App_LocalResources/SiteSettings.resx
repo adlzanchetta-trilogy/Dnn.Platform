@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -1487,6 +1487,12 @@
   </data>
   <data name="plInjectModuleHyperLink.Text" xml:space="preserve">
     <value>Inject Module Anchor</value>
+  </data>
+  <data name="plAllowJsInModuleHeaders.Help" xml:space="preserve">
+    <value>When switched on, no javascript will be allowed in the value set for a module header</value>
+  </data>
+  <data name="plAllowJsInModuleHeaders.Text" xml:space="preserve">
+    <value>Allow Javascript in Module Header</value>
   </data>
   <data name="plInlineEditorEnabled.Help" xml:space="preserve">
     <value>When switched on DNN allows editors to edit HTML module content directly on the page instead of having to go through the edit control.</value>
